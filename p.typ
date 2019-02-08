@@ -589,7 +589,7 @@ S:#include <stdio.h>
  : 
  :   result = is_palindrome(string);
  : 
- :   if ( result == 1 )
+ :   if (result == 1)
  :      printf("\"%s\" is a palindrome string.\n", string);
  :   else
  :      printf("\"%s\" isn't a palindrome string.\n", string); 
@@ -613,7 +613,7 @@ S:int is_palindrome(char *string)
  : 
  :   free(reverse);
  : 
- :   if ( check == 0 )
+ :   if (check == 0)
  :      return 1;
  :   else
  :      return 0;
@@ -655,10 +655,10 @@ S:void reverse_string(char *string)
  :   begin = string;
  :   end = string;
  : 
- :   for ( c = 0 ; c < ( length - 1 ) ; c++ )
+ :   for (c = 0; c < (length - 1); c++)
  :       end++;
  : 
- :   for ( c = 0 ; c < length/2 ; c++ ) 
+ :   for (c = 0; c < length/2; c++) 
  :   {        
  :      temp = *end;
  :      *end = *begin;
@@ -673,13 +673,13 @@ S:void reverse_string(char *string)
  :{
  :   while(*first==*second)
  :   {
- :      if ( *first == '\0' || *second == '\0' )
+ :      if (*first == '\0' || *second == '\0')
  :         break;
  : 
  :      first++;
  :      second++;
  :   }
- :   if( *first == '\0' && *second == '\0' )
+ :   if(*first == '\0' && *second == '\0')
  :      return 0;
  :   else
  :      return -1;
