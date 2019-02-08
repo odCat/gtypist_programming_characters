@@ -335,7 +335,7 @@ S:/* Hello world in C, K&R style */
  :}
  :
  :
- ://Hello world in C#
+ :// Hello world in C#
  :class HelloWorld
  :{
  :    static void Main()
@@ -359,6 +359,7 @@ S:/* Hello world in C, K&R style */
  :Begin
  :  WriteLn('Hello World');
  :End.
+
 Q:Do you want to continue to lesson P7 [Y/N] ? 
 N:MENU
 
@@ -518,7 +519,6 @@ S:// match a valid phone number
  :
  :// match an HTML tag
  :/^<([A-Za-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/
-
 
 Q:Do you want to continue to lesson P9 [Y/N] ? 
 N:MENU
@@ -685,7 +685,6 @@ S:void reverse_string(char *string)
  :      return -1;
  :}
 
-
 Q:Do you want to continue to lesson P10 [Y/N] ? 
 N:MENU
 
@@ -694,7 +693,7 @@ N:MENU
 *:PRACTICE_2
 B:Lesson P10
 I:(1) Try this excerpt from Doug Lea's malloc, written in C
-S:/* -----------------------  system deallocation -------------------------- */
+S:/* ------------------------ system deallocation -------------------------- */
  :
  :/* Unmap and unlink any mmapped segments that don't contain used chunks */
  :static size_t release_unused_segments(mstate m) {
@@ -808,7 +807,7 @@ S:        else if (HAVE_MORECORE) {
  :      m->trim_check = MAX_SIZE_T;
  :  }
  :
- :  return (released != 0)? 1 : 0;
+ :  return (released != 0) ? 1 : 0;
  :}
 
 Q:Do you want to continue to lesson P11 [Y/N] ? 
@@ -882,6 +881,7 @@ S:    if (char === '"') {
  :  }
  :  return tokens;
  :}
+ :
  :function parser(tokens) {
  :  let current = 0;
  :  function walk() {
@@ -1049,6 +1049,7 @@ S:function compiler(input) {
  :  let output = codeGenerator(newAst);
  :  return output;
  :}
+ :
  :module.exports = {
  :  tokenizer,
  :  parser,
